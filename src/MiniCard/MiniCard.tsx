@@ -19,6 +19,6 @@ const handleClick = (e:) => {
       <img src={image} id={id} alt={title} onClick={handleClick}/>
     </div>
   );
-};
+}
 
 export default MiniCard
