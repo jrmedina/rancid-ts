@@ -3,7 +3,7 @@ import MiniCard from "../MiniCard/MiniCard";
 import { Movies } from "../model";
 import "./MoviesContainer.css";
 
-const MoviesContainer: React.FC<Movies> = ({ movies }) => {
+const MoviesContainer: React.FC<Movies> = ({ movies, selectMovie }) => {
   const movieCards = movies.map((movie) => {
 
     return (
@@ -12,6 +12,7 @@ const MoviesContainer: React.FC<Movies> = ({ movies }) => {
         title={movie.title}
         id={movie.id.toString()}
         image={movie.poster_path}
+        selectMovie={selectMovie}
       />
     );
   });

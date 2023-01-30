@@ -9,4 +9,5 @@ export interface Movie {
 
 export interface Movies {
   movies: Movie[];
+  selectMovie: React.Dispatch<React.SetStateAction<object>>;
 }
