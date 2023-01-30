@@ -9,8 +9,7 @@ const App = () => {
   const selectMovie = (e: any) => {
     const matchingMovie = data.movies.find((movie) => movie.id === Number(e.target.id));
     setMovie(matchingMovie);
-
-    // console.log(Number(e.target.id));
+    
   };
 
   return (
