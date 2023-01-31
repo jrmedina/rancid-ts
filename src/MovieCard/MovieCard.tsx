@@ -1,4 +1,5 @@
 import React from "react";
+import "./MovieCard.css"
 
 interface MovieCardProps {
   movie?: {
@@ -17,11 +18,11 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
   return (
     <>
       {movie && (
-        <div>
-          <h3>{movie.title}</h3>
+        <div className="MovieCard">
+          <h3 className="title">{movie.title}</h3>
           <p>{movie.average_rating}</p>
           <p>{movie.release_date}</p>
-          <img src={movie.backdrop_path} alt={movie.title} />
+          <img className="poster"src={movie.backdrop_path} alt={movie.title} />
         </div>
       )}
     </>
