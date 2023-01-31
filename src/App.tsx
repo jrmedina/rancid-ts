@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { data } from "./resources/data";
 import MoviesContainer from "./MoviesContainer/MoviesContainer";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
