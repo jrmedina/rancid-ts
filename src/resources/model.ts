@@ -17,3 +17,10 @@ export interface AllMovies {
   movies: any;
   selectMovie: React.Dispatch<React.SetStateAction<object>>;
 }
+
+export interface MiniCardProps {
+  title: string;
+  id: string;
+  image: string;
+  selectMovie: React.Dispatch<React.SetStateAction<object>>;
+}

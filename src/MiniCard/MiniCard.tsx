@@ -1,15 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { MiniCardProps } from "../resources/model";
 import "./MiniCard.css";
 
-interface Props {
-  title: string;
-  id: string;
-  image: string;
-  selectMovie: React.Dispatch<React.SetStateAction<object>>;
-}
 
-const MiniCard: React.FC<Props> = ({ title, id, image, selectMovie }) => {
+
+const MiniCard: React.FC<MiniCardProps> = ({
+  title,
+  id,
+  image,
+  selectMovie,
+}) => {
   return (
     <div className="mini-card">
       <h3>{title}</h3>
