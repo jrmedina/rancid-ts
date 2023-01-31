@@ -1,6 +1,6 @@
 import React from "react";
 import MiniCard from "../MiniCard/MiniCard";
-import { AllMovies } from "../model";
+import { AllMovies } from "../resources/model";
 import "./MoviesContainer.css";
 
 //  interface AllMovies {
