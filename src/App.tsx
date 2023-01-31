@@ -18,8 +18,7 @@ const App = () => {
   }, []);
 
   const selectMovie = (e: any) => {
-console.log(data.movies);
-    
+
     const matchingMovie = movies && movies.find((movie:any) => movie.id === Number(e.target.id));
 
     setMovie(matchingMovie);
