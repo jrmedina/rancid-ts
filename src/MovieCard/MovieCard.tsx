@@ -19,7 +19,6 @@ interface MovieCardProps {
 }
 
 const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
-  console.log(movie);
   
   return (
     <>

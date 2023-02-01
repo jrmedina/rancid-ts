@@ -24,3 +24,17 @@ export interface MiniCardProps {
   image: string;
   selectMovie: React.Dispatch<React.SetStateAction<object>>;
 }
+export interface MovieDetails {
+  id: number;
+  poster_path: string;
+  backdrop_path: string;
+  title: string;
+  average_rating: number;
+  release_date: string;
+  budget: number;
+  genres: string[];
+  revenue: number;
+  tagline: string;
+  overview: string;
+  runtime: number;
+}
