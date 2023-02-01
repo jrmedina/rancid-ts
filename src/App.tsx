@@ -4,23 +4,17 @@ import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import { Movie, Movies } from "./resources/model";
 import MovieCard from "./MovieCard/MovieCard";
-import { apiCall } from "./resources/apiCalls";
+import { getMovies, getMovie } from "./resources/apiCalls";
 const App = () => {
   const [movie, setMovie] = useState<Movie>();
   const [movies, setMovies] = useState<Movies>();
 
-
-
   useEffect(() => {
-    apiCall().then((data) => setMovies(data.movies));
-
+    getMovies().then((data) => setMovies(data.movies));
   }, []);
 
   const selectMovie = (e: any) => {
-
-    const matchingMovie = movies && movies.find((movie:any) => movie.id === Number(e.target.id));
-
-    setMovie(matchingMovie);
+    getMovie(e.target.id).then((data) => setMovie(data.movie));
   };
 
   return (
