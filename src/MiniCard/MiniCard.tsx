@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import { MiniCardProps } from "../resources/model";
 import "./MiniCard.css";
 
-
-
 const MiniCard: React.FC<MiniCardProps> = ({
   title,
   id,

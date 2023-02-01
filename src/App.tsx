@@ -6,8 +6,6 @@ import { Movie, MovieDetails, Movies } from "./resources/model";
 import MovieCard from "./MovieCard/MovieCard";
 import { getMovies, getMovie } from "./resources/apiCalls";
 
-
-
 const App = () => {
   const [movie, setMovie] = useState<MovieDetails>();
   const [movies, setMovies] = useState<Movies>();
