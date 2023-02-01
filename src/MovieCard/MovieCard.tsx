@@ -27,6 +27,14 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
           <h3 className="title">{movie.title}</h3>
           <p>{movie.average_rating}</p>
           <p>{movie.release_date}</p>
+          <p>{movie.runtime}</p>
+          <p>{movie.release_date}</p>
+          <p>{movie.budget}</p>
+          <p>{movie.overview}</p>
+          <p>{movie.genres}</p>
+          <p>{movie.revenue}</p>
+          <p>{movie.tagline}</p>
+
           <img className="poster" src={movie.backdrop_path} alt={movie.title} />
         </div>
       )}
