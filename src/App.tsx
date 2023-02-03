@@ -20,7 +20,7 @@ const App = () => {
 
   return (
     <main className="App">
-      <h1>Some catchy name</h1>
+      <h1 className="header">Some catchy name</h1>
       <Switch>
         <Route
           exact
