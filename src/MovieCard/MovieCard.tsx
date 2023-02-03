@@ -19,20 +19,20 @@ interface MovieCardProps {
 }
 
 const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
-  console.log(new Date(movie.release_date).toLocaleDateString());
-
+ const hours = Math.floor(movie.runtime / 60);
+ const minutes = movie.runtime % 60;
   return (
     <>
       {movie && (
         <div className="MovieCard">
           <h3 className="title">{movie.title}</h3>
-          <p>{movie.average_rating}</p>
-          <p>{movie.runtime}</p>
-          <p>{new Date(movie.release_date).toLocaleDateString()}</p>
-          <p>{movie.budget}</p>
+          <p>Rating: {movie.average_rating} / 10</p>
+          <p>Runtime: {hours}h {minutes}m</p>
+          <p>Release Date: {new Date(movie.release_date).toLocaleDateString()}</p>
+          <p>Budget: {movie.budget} million</p>
           <p>{movie.overview}</p>
-          <p>{movie.genres}</p>
-          <p>{movie.revenue}</p>
+          <p>Genres: {movie.genres.join(", ")}</p>
+          <p>Revenue: {movie.revenue.toLocaleString()}</p>
           <p>{movie.tagline}</p>
 
           <img className="poster" src={movie.backdrop_path} alt={movie.title} />
