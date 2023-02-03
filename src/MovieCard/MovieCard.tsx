@@ -27,9 +27,13 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
         <div className="MovieCard">
           <h3 className="title">{movie.title}</h3>
           <p>Rating: {movie.average_rating} / 10</p>
-          <p>Runtime: {hours}h {minutes}m</p>
-          <p>Release Date: {new Date(movie.release_date).toLocaleDateString()}</p>
-          <p>Budget: {movie.budget} million</p>
+          <p>
+            Runtime: {hours}h {minutes}m
+          </p>
+          <p>
+            Release Date: {new Date(movie.release_date).toLocaleDateString()}
+          </p>
+          <p>Budget: {movie.budget.toLocaleString()} million</p>
           <p>{movie.overview}</p>
           <p>Genres: {movie.genres.join(", ")}</p>
           <p>Revenue: {movie.revenue.toLocaleString()}</p>
