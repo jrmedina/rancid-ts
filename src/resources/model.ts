@@ -15,7 +15,7 @@ export interface Movies {
 
 export interface AllMovies {
   movies: any;
-  selectMovie: React.Dispatch<React.SetStateAction<object>>;
+  selectMovie: React.Dispatch<React.SetStateAction<any>>;
 }
 
 export interface MiniCardProps {

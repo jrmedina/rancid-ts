@@ -14,7 +14,9 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
       {movie && (
         <div className="MovieCard">
           <Link to={"/"}>
-            <button type="button">GO BACK</button>
+            <button type="button" className="home-button">
+              GO BACK
+            </button>
           </Link>
           <h3 className="title">{movie.title}</h3>
           <p>Rating: {movie.average_rating} / 10</p>

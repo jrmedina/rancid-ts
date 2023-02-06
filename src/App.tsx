@@ -14,9 +14,8 @@ const App = () => {
     getMovies().then((data) => setMovies(data.movies));
   }, []);
 
-  const selectMovie = (e: any) => {
-    
-    getMovie(e.target.id).then((data) => setMovie(data.movie));
+  const selectMovie = (e: React.MouseEvent<HTMLImageElement>) => {
+    getMovie(e.currentTarget.id).then((data) => setMovie(data.movie));
   };
 
   return (
