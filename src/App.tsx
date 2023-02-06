@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import MoviesContainer from "./MoviesContainer/MoviesContainer";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
-import { Movie, MovieDetails, Movies } from "./resources/model";
+import { MovieDetails, Movies } from "./resources/model";
 import MovieCard from "./MovieCard/MovieCard";
 import { getMovies, getMovie } from "./resources/apiCalls";
 
