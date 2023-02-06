@@ -38,3 +38,20 @@ export interface MovieDetails {
   overview: string;
   runtime: number;
 }
+
+export interface MovieCardProps {
+  movie: {
+    id: number;
+    poster_path: string;
+    backdrop_path: string;
+    title: string;
+    average_rating: number;
+    release_date: string;
+    budget: number;
+    genres: string[];
+    revenue: number;
+    tagline: string;
+    overview: string;
+    runtime: number;
+  };
+}

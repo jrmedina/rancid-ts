@@ -1,22 +1,8 @@
 import React from "react";
+import { MovieCardProps } from "../resources/model";
 import "./MovieCard.css";
 
-interface MovieCardProps {
-  movie: {
-    id: number;
-    poster_path: string;
-    backdrop_path: string;
-    title: string;
-    average_rating: number;
-    release_date: string;
-    budget: number;
-    genres: string[];
-    revenue: number;
-    tagline: string;
-    overview: string;
-    runtime: number;
-  };
-}
+
 
 const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
 
