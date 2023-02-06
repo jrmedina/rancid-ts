@@ -15,6 +15,7 @@ const App = () => {
   }, []);
 
   const selectMovie = (e: any) => {
+    
     getMovie(e.target.id).then((data) => setMovie(data.movie));
   };
 
