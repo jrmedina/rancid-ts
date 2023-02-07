@@ -11,10 +11,10 @@ const MiniCard: React.FC<MiniCardProps> = ({
 }) => {
   return (
     <div className="mini-card">
-      <h3>{title}</h3>
       <Link to={`/${id}`}>
         <img src={image} id={id} alt={title} onClick={(e) => selectMovie(e)} />
       </Link>
+      <h4>{title}</h4>
     </div>
   );
 };
