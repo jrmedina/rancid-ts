@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Search.css"
 
 interface SearchProps {
     searchMovies: any;
 }
 const Search: React.FC<SearchProps> = ({ searchMovies }) => {
-  console.log(searchMovies);
-
+const [input, setInput] = useState()
   return (
     <form>
-      <input type="text" />{" "}
+        <p>Search</p>
+      <input type="text" value={input} onChange={(e) => searchMovies(e)}/>
     </form>
   );
 };

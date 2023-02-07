@@ -19,7 +19,8 @@ const App = () => {
     getMovie(e.currentTarget.id).then((data) => setMovie(data.movie));
   };
 
-  const searchMovies =() => {
+  const searchMovies =(e: any) => {
+console.log(e.target.value);
 
   }
 
