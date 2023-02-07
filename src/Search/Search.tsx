@@ -9,7 +9,7 @@ const [input, setInput] = useState()
   return (
     <form>
         <p>Search</p>
-      <input type="text" value={input} onChange={(e) => searchMovies(e)}/>
+      <input type="text" value={input} onChange={(e) => searchMovies(e.target.value)}/>
     </form>
   );
 };

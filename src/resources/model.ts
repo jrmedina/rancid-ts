@@ -11,6 +11,7 @@ export interface Movies {
   movies: Movie[];
   selectMovie: React.Dispatch<React.SetStateAction<object>>;
   find: any;
+  filter: any;
 }
 
 export interface AllMovies {

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import MoviesContainer from "./MoviesContainer/MoviesContainer";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
-import { MovieDetails, Movies } from "./resources/model";
+import { Movie, MovieDetails, Movies } from "./resources/model";
 import MovieCard from "./MovieCard/MovieCard";
 import { getMovies, getMovie } from "./resources/apiCalls";
 import Search from "./Search/Search";
@@ -19,8 +19,10 @@ const App = () => {
     getMovie(e.currentTarget.id).then((data) => setMovie(data.movie));
   };
 
-  const searchMovies =(e: any) => {
-console.log(e.target.value);
+  const searchMovies =(e: string) => {
+const results = movies && movies.filter((movie: Movie) => movie.title.toLowerCase().includes(e.toLowerCase()))
+console.log(results);
+setMovies(results)
 
   }
 
