@@ -19,11 +19,14 @@ const App = () => {
     getMovie(e.currentTarget.id).then((data) => setMovie(data.movie));
   };
 
-  const searchMovies =(e: string) => {
-const results = movies && movies.filter((movie: Movie) => movie.title.toLowerCase().includes(e.toLowerCase()))
-setMovies(results)
-
-  }
+  const searchMovies = (e: string) => {
+    const results =
+      movies &&
+      movies.filter((movie: Movie) =>
+        movie.title.toLowerCase().includes(e.toLowerCase())
+      );
+    setMovies(results);
+  };
 
   return (
     <main className="App">
@@ -35,7 +38,7 @@ setMovies(results)
           render={() =>
             movies && (
               <>
-                <Search searchMovies={searchMovies}/>
+                <Search searchMovies={searchMovies} />
                 <MoviesContainer movies={movies} selectMovie={selectMovie} />
               </>
             )
