@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Search.css"
 
 interface SearchProps {
-    searchMovies: any;
+  searchMovies: React.Dispatch<React.SetStateAction<any>>;
 }
 const Search: React.FC<SearchProps> = ({ searchMovies }) => {
 const [input, setInput] = useState()
