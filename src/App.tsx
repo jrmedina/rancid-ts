@@ -21,7 +21,6 @@ const App = () => {
 
   const searchMovies =(e: string) => {
 const results = movies && movies.filter((movie: Movie) => movie.title.toLowerCase().includes(e.toLowerCase()))
-console.log(results);
 setMovies(results)
 
   }
