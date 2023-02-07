@@ -19,6 +19,10 @@ const App = () => {
     getMovie(e.currentTarget.id).then((data) => setMovie(data.movie));
   };
 
+  const searchMovies =() => {
+
+  }
+
   return (
     <main className="App">
       <h1 className="header">Some catchy name</h1>
@@ -29,7 +33,7 @@ const App = () => {
           render={() =>
             movies && (
               <>
-                <Search />
+                <Search searchMovies={searchMovies}/>
                 <MoviesContainer movies={movies} selectMovie={selectMovie} />
               </>
             )
