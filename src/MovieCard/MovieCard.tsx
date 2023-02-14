@@ -3,12 +3,9 @@ import { Link } from "react-router-dom";
 import { MovieCardProps } from "../resources/model";
 import "./MovieCard.css";
 
-
-
 const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
-
- const hours = Math.floor(movie.runtime / 60);
- const minutes = movie.runtime % 60;
+  const hours = Math.floor(movie.runtime / 60);
+  const minutes = movie.runtime % 60;
   return (
     <>
       {movie && (
