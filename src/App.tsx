@@ -26,7 +26,8 @@ const App = () => {
         movie.title.toLowerCase().includes(e.toLowerCase())
       );
     setMovies(results);
-  };
+  }
+
 
   return (
     <main className="App">
