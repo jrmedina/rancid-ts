@@ -12,6 +12,6 @@ const [input, setInput] = useState()
       <input type="text" value={input} onChange={(e) => searchMovies(e.target.value)}/>
     </form>
   );
-};
+}
 
 export default Search;
