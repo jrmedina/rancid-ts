@@ -12,4 +12,4 @@ export const getMovie = (id: string) => {
   ).then((response) => {
     return response.json();
   });
-};
+}
