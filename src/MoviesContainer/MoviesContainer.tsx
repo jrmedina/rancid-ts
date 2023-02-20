@@ -13,9 +13,9 @@ const MoviesContainer: React.FC<AllMovies> = ({ movies, selectMovie }) => {
         image={movie.poster_path}
         selectMovie={selectMovie}
       />
-    )
-  })
+    );
+  });
   return <div className="movies-container">{movieCards}</div>;
-}
+};
 
 export default MoviesContainer;
