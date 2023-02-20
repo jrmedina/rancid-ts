@@ -14,7 +14,7 @@ const MoviesContainer: React.FC<AllMovies> = ({ movies, selectMovie }) => {
         selectMovie={selectMovie}
       />
     );
-  });
+  })
   return <div className="movies-container">{movieCards}</div>;
 }
 
