@@ -11,5 +11,5 @@ export const getMovie = (id: string) => {
     `https://rancid-tomatillos.herokuapp.com/api/v2/movies/${id}`
   ).then((response) => {
     return response.json();
-  });
+  })
 };
