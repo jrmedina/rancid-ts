@@ -1,1 +1,1 @@
-Rancid...but in TypeScript
+Rancid...but in TypeScript 🫠
